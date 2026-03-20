@@ -1,0 +1,6 @@
+services:
+  nginx:
+    image: ${FRONTEND_IMG}
+    restart: unless-stopped
+    ports:
+      - "80:80"
